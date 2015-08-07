@@ -62,7 +62,7 @@
 
             android:textStyle="normal|bold|italic"
 
-            android:text="Sample Dialog Fragment"
+            android:text="@string/dialog_message"
 
             android:textSize="16sp"
 

@@ -1,14 +1,14 @@
 package com.example.stanley.androiddialog;
 
-import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
 
-public class MainActivity extends Activity {
+public class MainActivity extends ActionBarActivity {
 
     Button alertButton;
 
@@ -25,7 +25,7 @@ public class MainActivity extends Activity {
             public void onClick(View arg0) {
                 AlertFragment alertedFragment = new AlertFragment();
                 // Show Alert DialogFragment
-                alertedFragment.show(getFragmentManager(), "dialog");
+                alertedFragment.show(getSupportFragmentManager(), "dialog");
             }
         });
 
